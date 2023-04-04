@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Student Management System</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<h1>Student Management CRUD</h1>
+
+  
+    <form method="post" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div class = "studentForm" >
+        
+            <input type="text" name="studentName" id="studentName" placeholder="Name" required>
+        
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        
+            <input type="text" name="grade" id="grade" placeholder="Grade" required>
+        
+            <input type="number" name="age" id="age" placeholder="Age" required>
+        
+            <input type="text" name="degree" id="degree" placeholder="Degree" required>
+
+        </div>
+                    
+        <div >
+            <input id="form-action-button" type="submit" value="Add Student">
+        </div>
+
+    </form>
+
+    <div id="searchId">
+        <input type="text" name="search" id="search" placeholder="Search by Name, email and degree">
+    </div>
+
+    
+    <table class="StudentList" id="listTable">
+
+        
+                  
+        <thead>
+
+            <tr>
+                <th style="width:5%">ID</th>
+                <th style="width:25%">Student Name</th>
+                <th style="width:25%">Email</th>
+                <th style="width:10%">Age</th>
+                <th style="width:10%">Grade</th>
+                <th style="width:15%">Degree</th>
+                <th style="width:10%"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+    </table>
+            
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>
